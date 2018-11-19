@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <meta name="author" content="Marcos">
   <meta name="keywords" content="Palabras Claves">
   <meta name="description" content="Descripcion">
@@ -14,50 +14,61 @@
 </head>
 
 <body>
+  <div class="contenido">
 
-  <header id="Cabecera">
-    <h1>Comenzando con la Fotografía</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="paisajes.html">Paisajes</a>
-      <a href="retratos.html">Retratos</a>
-    </nav>
-  </header>
+    <header>
+      <h1>Comenzando con la Fotografía</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="actual">Inicio</a></li>
+          <li><a href="paisajes.html">Paisajes</a></li>
+          <li><a href="retratos.html">Retratos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="Contenido">
     <section>
-      <article class="Imagen_Central">
-        <img src="Media/Camara.jpg" alt="Camara de Fotografía">
+      <article id="Imagen_Central">
+        <img class="principal" src="Media/Camara.jpg" alt="Camara de Fotografía">
       </article>
-      <article class="Imagenes_Secundarias">
-        <img src="Media/Arbol.jpg" alt="Paisaje">
-        <img src="Media/Retrato.jpg" alt="Retrato">
+      <article id="Imagenes_Secundarias">
+        <div class="galeria_paisajes">
+          <a target="_self" href="paisajes.html">
+            <img src="Media/Arbol.jpg" alt="Árbol">
+          </a>
+          <div class="descripcion">Paisajes</div>
+        </div>
+        <div class="galeria_retratos">
+          <a target="_self" href="retratos.html">
+            <img src="Media/Retrato.jpg" alt="Retrato">
+          </a>
+          <div class="descripcion">Retratos</div>
+        </div>
+      </article>
     </section>
+
+    <footer>
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <p>+54-9-11-09128734<br>
+          fotografia@correo.com<br>
+          Calle Cochabamba V999, Buenos Aires, Arg.</p>
+      </div>
+      <div class="terminos">
+        <h3>Términos</h3>
+        <p>Conocé nuestros términos y condiciones...</p>
+      </div>
+      <div class="redes_sociales">
+        <h3>Redes Sociales</h3>
+        <a href="https://www.facebook.com/">Facebook</a> <br>
+        <a href="https://www.instagram.com/">Instagram</a> <br>
+        <a href="https://www.twitter.com/">Twitter</a>
+      </div>
+      <div class="derechos">
+        <h3>Derechos</h3>
+        <p>Marcos Dario© - 2018</p>
+      </div>
+    </footer>
+
   </div>
-
-  <footer id="Pie">
-    <div class="Contacto">
-      <h3>Contacto</h3>
-      <p>+54-9-11-09128734<br>
-        fotografia@correo.com<br>
-        Calle Cochabamba V999, Buenos Aires, Arg.</p>
-    </div>
-    <div class="Terminos">
-      <h3>Terminos</h3>
-      <p>Conocé nuestros términos y condiciones...</p>
-    </div>
-    <div class="Redes_Sociales">
-      <h3>Redes Sociales</h3>
-      <a href="https://www.facebook.com/">Facebook</a>
-      <a href="https://www.instagram.com/">Instagram</a>
-      <a href="https://www.twitter.com/">Twitter</a>
-    </div>
-    <div class="Derechos">
-      <h3>Derechos</h3>
-      <p>Marcos Dario© - 2018</p>
-    </div>
-  </footer>
-
 </body>
-
-</html>

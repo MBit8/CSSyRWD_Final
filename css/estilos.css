@@ -1,17 +1,318 @@
+/*-----*Animacion*-----*/
+@-webkit-keyframes Rebote {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+/*-----#Estilos Gral#-----*/
 body {
-  background-color: #02010a
-  font-family: 'Dancing Script'
+  width: 90%;
+  background-color: #02010a;
+  font-family: 'Dancing Script';
 }
 
 img {
-
+  -webkit-box-shadow: 2px 2px #02010a;
 }
 
-#Cabecera {
-  background-color: #5b7989
-
+header {
+  overflow: hidden;
+  background-color: #5b7989;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 10px 10px 0 0;
+  -webkit-animation-name: Rebote;
+  -webkit-animation-duration: 1s;
 }
 
-.Contenido {
-  
+#Imagen_Central {
+  background-color: #82c3a5;
+  padding: 2%;
+}
+
+#Imagenes_Secundarias {
+  background-color: #d5c75f;
+  padding: 2%;
+}
+
+footer {
+  overflow: hidden;
+  background-color: #C6d5c5;
+  padding: 1%;
+  border-radius: 0 0 10px 10px;
+}
+
+/*-----(Estilos Desktop)-----*/
+@media (min-width: 900px) {
+  .contenido {
+    width: 900px;
+    margin: auto;
+  }
+
+  /*-----Cabecera-----*/
+  h1 {
+    float: left;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    display: inline;
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  li a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a.actual {
+    text-decoration: none;
+  }
+
+  /*-----Contenido-----*/
+  section {
+    background-color: #82c3a5;
+  }
+
+  #Imagen_Central img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Imagenes_Secundarias {
+    display: inline-flex;
+    text-align: center;
+  }
+
+  .galeria_paisajes img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: 0.7s;
+  }
+
+  .galeria_paisajes img:hover {
+    -webkit-transform: rotate(10deg);
+    border: 2px solid #82c3a6;
+    -webkit-box-shadow: 2px 3px #82c3a6;
+  }
+
+  .galeria_retratos img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: 0.7s;
+  }
+
+  .galeria_retratos img:hover {
+    -webkit-transform: translate(20px, -5px);
+    border: 2px solid #82c3a6;
+    -webkit-box-shadow: 2px 3px #82c3a6;
+  }
+
+  /*-----Pie de Pagina-----*/
+  footer {
+    display: flex;
+    text-align: left;
+    font-size: 120%;
+  }
+
+  .contacto {
+    order: 1;
+    padding: 1%;
+  }
+
+  .terminos {
+    order: 2;
+    padding: 1%;
+  }
+
+  .redes_sociales {
+    order: 3;
+    padding: 1%;
+  }
+
+  .redes_sociales a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .derechos {
+    order: 4;
+    padding: 1%;
+  }
+}
+
+/*-----(Estilos Mobile)-----*/
+@media (max-width: 899px) {
+  .contenido {
+    width: 100%;
+    margin: auto;
+  }
+
+  /*-----Cabecera-----*/
+  h1 {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    display: inline;
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  li a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  li a.actual {
+    text-decoration: none;
+  }
+
+  /*-----Contenido-----*/
+  section {
+    background-color: #82c3a5;
+  }
+
+  #Imagen_Central img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Imagenes_Secundarias {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .galeria_paisajes img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: 0.7s;
+  }
+
+  .galeria_paisajes img:hover {
+    -webkit-transform: rotate(10deg);
+    border: 2px solid #82c3a6;
+    -webkit-box-shadow: 2px 3px #82c3a6;
+  }
+
+  .galeria_retratos img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: 0.7s;
+  }
+
+  .galeria_retratos img:hover {
+    -webkit-transform: translate(20px, -5px);
+    border: 2px solid #82c3a6;
+    -webkit-box-shadow: 2px 3px #82c3a6;
+  }
+
+  /*-----Pie de Pagina-----*/
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .contacto {
+    order: 1;
+    padding: 1%;
+  }
+
+  .terminos {
+    order: 2;
+    padding: 1%;
+  }
+
+  .redes_sociales {
+    order: 3;
+    padding: 1%;
+  }
+
+  .redes_sociales a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .derechos {
+    order: 4;
+    padding: 1%;
+  }
 }
